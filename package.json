@@ -1,0 +1,34 @@
+{
+  "name": "measure-hook",
+  "keywords": ["measure", "timing"],
+  "version": "1.0.1",
+  "description": "Measure how long an op takes, then do a callback to post results, do something else etc",
+  "main": "index.js",
+  "repository": "git@github.com:cheshirecode/measure-hook.git",
+  "author": "cheshireCode <dac4158@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/cheshirecode/flatten-monorepo/issues",
+    "email": "dac4158+github@gmail.com"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "files": ["!**/*.test.js", "index.js"],
+  "bin": "index.js",
+  "scripts": {
+    "start": "yarn test:watch",
+    "test": "istanbul cover tape ./*.test.js 2>&1 | tap-nirvana",
+    "test:watch": "tape-watch ./*.test.js -w -c 2>&1 -p tap-nirvana",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
+  },
+  "prepublishOnly": "yarn test",
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "istanbul": "1.1.0-alpha.1",
+    "tap-nirvana": "^1.0.8",
+    "tape": "^4.9.1",
+    "tape-watch": "^2.3.0"
+  }
+}
