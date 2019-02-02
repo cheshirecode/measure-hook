@@ -32,6 +32,7 @@ test("measure with callback", t => {
   const mWithCb = measure(250, (timing, s) => {
     s += 1;
     t.equal(s, c + 1, `new value was ${c}, should be ${c + 1}`);
+    t.end();
   });
 
   setTimeout(() => {
