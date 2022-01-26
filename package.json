@@ -6,14 +6,15 @@
   "main": "index.js",
   "repository": "git@github.com:cheshirecode/measure-hook.git",
   "author": "cheshireCode <dac4158@gmail.com>",
-  "license": "MIT",
+  "license": "UNLICENSE",
   "private": false,
   "bugs": {
-    "url": "https://github.com/cheshirecode/flatten-monorepo/issues",
+    "url": "https://github.com/cheshirecode/measure-hook/issues",
     "email": "dac4158+github@gmail.com"
-  },
+  },  
   "engines": {
-    "node": ">= 8"
+    "npm": "~7",
+    "node": ">= 14"
   },
   "files": ["!**/*.test.js", "index.js"],
   "bin": "index.js",
