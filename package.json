@@ -13,7 +13,7 @@
     "email": "dac4158+github@gmail.com"
   },  
   "engines": {
-    "npm": "~7",
+    "npm": ">= 7",
     "node": ">= 14"
   },
   "files": ["!**/*.test.js", "index.js"],
